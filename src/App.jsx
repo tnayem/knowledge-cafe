@@ -1,10 +1,20 @@
+import Blogs from "./components/Blogs/Blogs"
+import Bookmarks from "./components/Bookmarks/Bookmarks"
+import Header from "./components/Header/Header"
 
 function App() {
 
   return (
-    <>
-      <h1 className=" text-5xl text-center">This is Heading</h1>
-    </>
+    <div className="max-w-6xl mx-auto">
+      <div className="py-2">
+        <Header></Header>
+      </div>
+      <hr />
+      <div className="md:flex">
+        <Blogs></Blogs>
+        <Bookmarks></Bookmarks>
+      </div>
+    </div>
   )
 }
 
