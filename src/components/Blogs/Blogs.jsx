@@ -12,7 +12,6 @@ const Blogs = ({handleAddToBookMark}) => {
     },[])
     return (
         <div className="md:w-2/3">
-            <h1 className="text-4xl">Blogs: {blogs.length}</h1>
             <div>
                 {
                     blogs.map(blog=><Blog key={blog.id} blog={blog} handleAddToBookMark={handleAddToBookMark}></Blog>)

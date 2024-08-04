@@ -16,7 +16,7 @@ console.log(bookmarks);
         <Header></Header>
       </div>
       <hr />
-      <div className="md:flex">
+      <div className="md:flex mt-5">
         <Blogs handleAddToBookMark = {handleAddToBookMark}></Blogs>
         <Bookmarks bookmarks={bookmarks}></Bookmarks>
       </div>
